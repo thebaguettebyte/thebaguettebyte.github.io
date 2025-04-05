@@ -1,0 +1,208 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>HTML and CSS-baguettebyte&#39;s coding!</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="We shall dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What can they do for us? Why have they arrived? and have they come in peace, or do they come bearing some hidden agenda? So fasten your cravat and steady your monocle, for the journey ahead may prove delightfully turbulent!" />
+  <meta name="author" content="baguettebye" /><link rel="preload stylesheet" as="style" href="https://thebaguettebyte.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://thebaguettebyte.github.io/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="https://thebaguettebyte.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="https://thebaguettebyte.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://thebaguettebyte.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.145.0">
+  <meta itemprop="name" content="HTML and CSS">
+  <meta itemprop="description" content="We shall dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What can they do for us? Why have they arrived?">
+  <meta itemprop="datePublished" content="2025-04-04T20:23:51+02:00">
+  <meta itemprop="dateModified" content="2025-04-04T20:23:51+02:00">
+  <meta itemprop="wordCount" content="522"><meta property="og:url" content="https://thebaguettebyte.github.io/posts/html-and-css/">
+  <meta property="og:site_name" content="baguettebyte&#39;s coding!">
+  <meta property="og:title" content="HTML and CSS">
+  <meta property="og:description" content="We shall dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What can they do for us? Why have they arrived?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-04T20:23:51+02:00">
+    <meta property="article:modified_time" content="2025-04-04T20:23:51+02:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTML and CSS">
+  <meta name="twitter:description" content="We shall dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What can they do for us? Why have they arrived?">
+
+  <link rel="canonical" href="https://thebaguettebyte.github.io/posts/html-and-css/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="top-header mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="https://thebaguettebyte.github.io/">
+      <img src="/images/logo.png" class="my-logo" alt="baguettebyte&#39;s coding!">
+  </a>
+  
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">HTML and CSS</h1><div class="text-xs antialiased opacity-60"><time>Apr 4, 2025</time><span class="mx-1">&middot;</span>
+      <span>baguettebye</span></div></header>
+
+  <section><p>We shall dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What can they do for us? Why have they arrived? and have they come in peace, or do they come bearing some hidden agenda? So fasten your cravat and steady your monocle, for the journey ahead may prove delightfully turbulent!</p>
+<figure>
+    <img src="htmlcssImg.png" alt="Scientists afraid of HTML and CSS monsters coming to earth">
+    <figcaption>From: Adobe Stock</figcaption>
+</figure>
+<h3 id="what-pray-tell-is-this-elusive-html">What, Pray Tell, Is This Elusive HTML?</h3>
+<p>Imagine your own body, your skeleton is  the HTML, the very foundation that holds everything together. It stands for Hypertext Markup Language, so let&rsquo;s get hyper indeed.</p>
+<p>We use this language to build the structure of our website. &ldquo;Here&rsquo;s the head&rdquo;, &ldquo;Here&rsquo;s the body&rdquo;, and &ldquo;Here&rsquo;s the footer&rdquo; (yes, in the digital realm, it&rsquo;s called the &ldquo;footer&rdquo;, not quite as glamorous as an actual foot, I&rsquo;d say). This isn&rsquo;t too difficult to grasp, at least not at the outset.</p>
+<p>I&rsquo;ve come across many a site that suggests HTML isn&rsquo;t really a programming language per se, as it lacks the logic-driven qualities of true programming. To put it in another perspective: think of a website as a pizza, and HTML? Well, it&rsquo;s the dough. Without it, we&rsquo;d just be left with toppings floating in mid-air, an unsatisfying prospect indeed.</p>
+<h3 id="it-is-time-to-incorporate-a-few-elements">It is time to incorporate a few elements!</h3>
+<p>Let us skedaddle right into it! This time, we&rsquo;ll be discussing tags, those essential little creatures that allow us to create elements on a website. We&rsquo;ll begin with the most basic of them, to set a solid foundation for what&rsquo;s to come.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;This is a tag!&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;This is also a tag!&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;This is another tag!&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>The HTML tag, my dear friends, is the very root and noble container of all the other elements that grace your website. Nestled within this structure is the head tag, where one must place the vital information about your site, such as its title. This title, of course, is the distinguished text that appears in the very tab of your browser, proudly announcing the presence of your creation.</p>
+<figure>
+    <img src="titleImg.jpg" alt="image of a tab containing the set meta title">
+    
+</figure>
+<p>One may also add or modify the description of one&rsquo;s page, this, of course, is the very information that graces the search results when one Googles your creation, offering a brief yet compelling glimpse of what lies within.</p>
+<figure>
+    <img src="descriptionImg.jpg" alt="Showing what a meta description looks like">
+    
+</figure>
+<p>The title and description, are known as metadata. I daresay there are many more such meta tags awaiting us in the future, but for now, let us content ourselves with these foundational ones, to be explored in due time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;The finest site, without question!&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span><span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The greatest site in all the world!&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><p>As we observe with tags, it is imperative to close them properly. For instance, the title tag is closed with &lt;/&gt;, while the meta tag uses /&gt;, a self-closing tag, no less. These self-closing tags, you see, are quite unique, as they do not permit any children. But more on that mysterious matter later, as we venture further down the rabbit hole. Think of it like leaving a portal ajar, allowing unwanted elements to slip through and join the fray. Best to close the damn tag, my friends, and keep the realm in order.</p>
+<figure>
+    <img src="closingTags.png" alt="">
+    
+</figure></section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://thebaguettebyte.github.io/posts/vsc-and-cli-basics/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Visual Studio Code And Command Line Basics</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025<a class="link" href="https://thebaguettebyte.github.io/">baguettebyte&#39;s coding!</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

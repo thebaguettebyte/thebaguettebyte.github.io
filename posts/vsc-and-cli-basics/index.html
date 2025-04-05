@@ -1,0 +1,260 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Visual Studio Code And Command Line Basics-baguettebyte&#39;s coding!</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="A Gentleman’s Introduction to Visual Studio Code and the Command Line: Mastering the Tools of the Trade.
+
+    
+    From: AI Generated
+
+So, today&rsquo;s learning curve brings us face-to-face with the enigmatic realm of IDEs… or is it IDE&rsquo;s? No, no, let us avoid that grammatical minefield and simply stick to the singular: IDE. I won&rsquo;t lie, I have dabbled in Visual Studio Code, or VSC, as the fashionable youth call it, mostly to wrangle this very blog into submission. It was a harrowing ordeal, given my complete lack of expertise, but I persevered! Of course, I leaned heavily on the wisdom of the theme&rsquo;s discussion board and scoured Hugo&rsquo;s official site for guidance. A humbling experience, to be sure." />
+  <meta name="author" content="baguettebye" /><link rel="preload stylesheet" as="style" href="https://thebaguettebyte.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://thebaguettebyte.github.io/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="https://thebaguettebyte.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="https://thebaguettebyte.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://thebaguettebyte.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.145.0">
+  <meta itemprop="name" content="Visual Studio Code And Command Line Basics">
+  <meta itemprop="description" content="So, today&#39;s learning curve brings us face-to-face with the enigmatic realm of IDEs… or is it IDE&#39;s? No, no, let us avoid that grammatical minefield and simply stick to the singular: IDE.">
+  <meta itemprop="datePublished" content="2025-04-03T17:55:02+02:00">
+  <meta itemprop="dateModified" content="2025-04-03T17:55:02+02:00">
+  <meta itemprop="wordCount" content="665"><meta property="og:url" content="https://thebaguettebyte.github.io/posts/vsc-and-cli-basics/">
+  <meta property="og:site_name" content="baguettebyte&#39;s coding!">
+  <meta property="og:title" content="Visual Studio Code And Command Line Basics">
+  <meta property="og:description" content="So, today&#39;s learning curve brings us face-to-face with the enigmatic realm of IDEs… or is it IDE&#39;s? No, no, let us avoid that grammatical minefield and simply stick to the singular: IDE.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-03T17:55:02+02:00">
+    <meta property="article:modified_time" content="2025-04-03T17:55:02+02:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Visual Studio Code And Command Line Basics">
+  <meta name="twitter:description" content="So, today&#39;s learning curve brings us face-to-face with the enigmatic realm of IDEs… or is it IDE&#39;s? No, no, let us avoid that grammatical minefield and simply stick to the singular: IDE.">
+
+  <link rel="canonical" href="https://thebaguettebyte.github.io/posts/vsc-and-cli-basics/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="top-header mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="https://thebaguettebyte.github.io/">
+      <img src="/images/logo.png" class="my-logo" alt="baguettebyte&#39;s coding!">
+  </a>
+  
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Visual Studio Code And Command Line Basics</h1><div class="text-xs antialiased opacity-60"><time>Apr 3, 2025</time><span class="mx-1">&middot;</span>
+      <span>baguettebye</span></div></header>
+
+  <section><h2 id="a-gentlemans-introduction-to-visual-studio-code-and-the-command-line-mastering-the-tools-of-the-trade">A Gentleman’s Introduction to Visual Studio Code and the Command Line: Mastering the Tools of the Trade.</h2>
+<figure>
+    <img src="TopImg.png" alt="Guy sitting with loads of screens around him.">
+    <figcaption>From: AI Generated</figcaption>
+</figure>
+<p>So, today&rsquo;s learning curve brings us face-to-face with the enigmatic realm of IDEs… or is it IDE&rsquo;s? No, no, let us avoid that grammatical minefield and simply stick to the singular: IDE. I won&rsquo;t lie, I have dabbled in Visual Studio Code, or VSC, as the fashionable youth call it, mostly to wrangle this very blog into submission. It was a harrowing ordeal, given my complete lack of expertise, but I persevered! Of course, I leaned heavily on the wisdom of the theme&rsquo;s discussion board and scoured Hugo&rsquo;s official site for guidance. A humbling experience, to be sure.</p>
+<h3 id="first-up-ide-huh">First up! IDE? Huh&hellip;?</h3>
+<p>So, IDE stands for Integrated Development Environment, which is a rather posh way of saying, &ldquo;Here’s a tool to help you type code&rdquo;, I suppose. Sure, you could use Notepad if you fancied the challenge, or, in a truly adventurous spirit, you could scribble your code down with pen and paper, snap a photo, and ask an AI to transcribe it into code on your computer. The possibilities are endless, truly.</p>
+<p>I have experimented with three different kinds of IDEs (though I refuse to count Notepad or the noble pen-and-paper method). As for the technical details of these programs, well, I shan’t pretend to be an expert. Frankly, I have no clue how half of it works, hah!</p>
+<h4 id="atom">Atom</h4>
+<figure>
+    <img src="atomImg.jpg" alt="Image of an atom, white in color, blueish background.">
+    
+</figure>
+<p><a href="https://atom-editor.cc/">Click here for the official site</a></p>
+<ul>
+<li>(+) Looks splendid!</li>
+<li>(+) Works on Windows, Mac and Linux, Great Scott!</li>
+<li>(-) No idea, haven’t used it enough to form a proper opinion.</li>
+</ul>
+<h4 id="sublime-text">Sublime Text</h4>
+<figure>
+    <img src="sublimeTextImg.png" alt="Big letters spelling Sublime Text on a grey background">
+    
+</figure>
+<p><a href="https://www.sublimetext.com/">Click here for the official site</a></p>
+<ul>
+<li>(+) Supposedly very lightweight, so say the wise sages of the forums.</li>
+<li>(+) Incredibly easy to use, even for mere mortals like us.</li>
+<li>(+ &amp; -) Free… until it isn’t. At some point, it sternly declares, &ldquo;NO!&rdquo; and demands $99 for the privilege of continued updates (for three years, mind you). On the bright side, you can use your key on multiple machines, small mercies!</li>
+</ul>
+<h4 id="visual-studio-code">Visual Studio Code</h4>
+<figure>
+    <img src="vscImg.png" alt="VSC Logo and its text next to it.">
+    
+</figure>
+<p><a href="https://code.visualstudio.com/">Click here for the official site</a></p>
+<ul>
+<li>(+) Feels delightfully lightweight, starts up faster than I can make a cup of tea.</li>
+<li>(+) You can customize the living daylights out of it.</li>
+<li>(-) I shall reserve judgment… for now. Stay tuned!</li>
+</ul>
+<h3 id="cli">CLI</h3>
+<p>When I first encountered the term CLI, I had absolutely no idea what it meant, nooooo clue. Even when I learned it stood for Command Line Interface, I was none the wiser. I understood the words separately, but together? Swoosh! Right over my head.</p>
+<p>After some digging, however, I’ve come to understand that a CLI is essentially a way to boss your computer around using text commands (and no, not the AI kind). You can create folders, move files, navigate your system, launch programs, and probably summon ancient digital spirits if you type the right incantation. Fascinating stuff!</p>
+<p>The guide mentioned something about Git and the terminal, which was a delightful coincidence, turns out, I had already dabbled in this dark art when uploading my blog. And that’s when it finally clicked: a CLI is essentially your Command Prompt or PowerShell on Windows, or Terminal on macOS (which, I must confess, I had to look up).</p>
+<p>Each CLI has its own collection of shortcuts and commands, a veritable treasure trove of wizardry that we shall uncover as we go.</p>
+<p>For now, here are some of the commands I suspect I’ll be using most frequently:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Commands</th>
+          <th>Explanation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>cd..</td>
+          <td>Goes back one folder</td>
+      </tr>
+      <tr>
+          <td>mkdir</td>
+          <td>Creates a folder</td>
+      </tr>
+      <tr>
+          <td>dir</td>
+          <td>Shows what is inside said folder</td>
+      </tr>
+  </tbody>
+</table>
+<p>Not the most extensive list, I admit, but fear not! With time, this humble collection shall grow. By the end of this journey, I fully expect to look like this distinguished gentleman:</p>
+<figure>
+    <img src="bottomImg.png" alt="Guy standing infront of a screen, trying to look smart.">
+    <figcaption>From: AI Generated</figcaption>
+</figure>
+<p>Tomorrow’s lesson? Laying down the foundations of HTML and CSS, finally getting to the fun part! I’m actually looking forward to it. Plus, it’s Friday, which makes everything infinitely better!</p>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://thebaguettebyte.github.io/posts/taking-the-first-step-part-2/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Taking the First Step: Part 2</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="https://thebaguettebyte.github.io/posts/html-and-css/"
+      ><span>HTML and CSS</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025<a class="link" href="https://thebaguettebyte.github.io/">baguettebyte&#39;s coding!</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
