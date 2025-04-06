@@ -98,8 +98,11 @@ A client, is none other than your trusty computer! The very machine you are usin
     <a class="-translate-y-[1px] text-2xl font-medium" href="https://thebaguettebyte.github.io/">
       <img src="/images/logo.png" class="my-logo" alt="baguettebyte&#39;s coding!">
   </a>
-  
-    
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
     
   </div>
 
@@ -207,7 +210,29 @@ A client, is none other than your trusty computer! The very machine you are usin
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
       href="https://thebaguettebyte.github.io/posts/vsc-and-cli-basics/"
       ><span>Visual Studio Code And Command Line Basics</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
-    ></nav></article></main><footer
+    ></nav>
+  <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="fcb74724-f2ac-4c63-be52-be6a541f64fa"
+    data-page-id="4aa160dd0d4b9839b3453427cb23783d"
+    data-page-url="https://thebaguettebyte.github.io/posts/taking-the-first-step-part-2/"
+    data-page-title="Taking the First Step: Part 2"
+  ></div>
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      const iframe = document.querySelector('#cusdis_thread iframe');
+      if (iframe) {
+        const observer = new MutationObserver(() => {
+          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        });
+        observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
+      }
+    });
+  </script>
+
+
+  </article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025<a class="link" href="https://thebaguettebyte.github.io/">baguettebyte&#39;s coding!</a></div>
