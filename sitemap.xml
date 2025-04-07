@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://thebaguettebyte.github.io/</loc>
     <lastmod>2025-04-04T20:23:51+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/html-and-css/</loc>
+    <loc>https://thebaguettebyte.github.io/posts/html-and-css/</loc>
     <lastmod>2025-04-04T20:23:51+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://thebaguettebyte.github.io/posts/</loc>
     <lastmod>2025-04-04T20:23:51+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/vsc-and-cli-basics/</loc>
+    <loc>https://thebaguettebyte.github.io/posts/vsc-and-cli-basics/</loc>
     <lastmod>2025-04-03T17:55:02+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/taking-the-first-step-part-2/</loc>
+    <loc>https://thebaguettebyte.github.io/posts/taking-the-first-step-part-2/</loc>
     <lastmod>2025-04-02T20:33:04+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/taking-the-first-step-part-1/</loc>
+    <loc>https://thebaguettebyte.github.io/posts/taking-the-first-step-part-1/</loc>
     <lastmod>2025-04-02T14:28:41+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/welcome/</loc>
+    <loc>https://thebaguettebyte.github.io/posts/welcome/</loc>
     <lastmod>2025-04-02T14:26:37+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://thebaguettebyte.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://thebaguettebyte.github.io/tags/</loc>
   </url>
 </urlset>
