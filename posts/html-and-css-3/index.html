@@ -1,0 +1,270 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>HTML and CSS: Part 3-baguettebyte&#39;s coding!</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="After the splendid escapade of our inaugural project, we return to the noble halls of HTML and CSS, with a greater emphasis on the ever-dashing CSS this time. I shall be employing CodePen once more, so that both the code and its gallant results may be admired side by side. Now then, let us begin with a touch of general knowledge to set the stage.
+CSS, what does it stand for?
+It stands for Cascading Style Sheets." />
+  <meta name="author" content="baguettebyte" /><link rel="preload stylesheet" as="style" href="https://thebaguettebyte.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://thebaguettebyte.github.io/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="https://thebaguettebyte.github.io/twitter.svg" /><link rel="preload" as="image" href="https://thebaguettebyte.github.io/github.svg" />
+
+  <script
+    defer
+    src="https://thebaguettebyte.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="https://thebaguettebyte.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://thebaguettebyte.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.145.0">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="top-header mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="https://thebaguettebyte.github.io/">
+      <img src="/images/logo.png" class="my-logo" alt="baguettebyte&#39;s coding!">
+  </a>
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+    
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/baguettebyte"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/thebaguettebyte"
+        target="_blank"
+        rel="me"
+      >github</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">HTML and CSS: Part 3</h1><div class="text-xs antialiased opacity-60"><time>Apr 8, 2025</time><span class="mx-1">&middot;</span>
+      <span>baguettebyte</span></div></header>
+
+  <section><p>After the splendid escapade of our inaugural project, we return to the noble halls of HTML and CSS, with a greater emphasis on the ever-dashing CSS this time. I shall be employing CodePen once more, so that both the code and its gallant results may be admired side by side. Now then, let us begin with a touch of general knowledge to set the stage.</p>
+<h3 id="css-what-does-it-stand-for">CSS, what does it stand for?</h3>
+<p>It stands for Cascading Style Sheets.</p>
+<h3 id="what-is-the-difference-between-css-and-html">What is the difference between CSS and HTML?</h3>
+<p>We are already acquainted with HTML as the structural backbone, the very skeleton of a website. In that grand analogy, CSS takes the role of the attire and grooming: it bestows colour, typography, spacing, and layout, dressing our humble skeleton in its finest regalia.</p>
+<h3 id="what-is-a-selectorpropertyvalue-in-css">What is a selector/property/value in CSS?</h3>
+<p>Pray, do cast thine eyes upon the code snippet below to see how we employ these splendid chaps in practice:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* The p tag is what we call a selector. It &#34;selects&#34; a tag from your HTML.*/</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span>.<span style="color:#a6e22e">big</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* It&#39;s still a selector, but with a .class selector attached to it as well.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    So in HTML, if you remember, it would look like this &lt;p class=&#34;big&#34;&gt;Text&lt;/p&gt; */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span>.<span style="color:#a6e22e">big</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">red</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* color and font-size are what is called values.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    You use these to change the looks of the elements on your site  */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="should-we-use-margin-or-padding">Should we use margin or padding?</h3>
+<p>Ah, an astute inquiry indeed, dear baguette! One might think of it thus:</p>
+<p><strong>Margin</strong> is the refined space one keeps from others, like a polite aristocrat maintaining social distance at a garden party.
+<strong>Padding</strong>, however, is the cozy space within one&rsquo;s own estate, the plush cushions inside your drawing room, if you will.</p>
+<p>Do feast your eyes upon the accompanying illustration for further elucidation:</p>
+<figure>
+    <img src="marginPaddingImg.png" alt="Image of a box that shows a border, padding and margin.">
+    <figcaption>From: hackr.io</figcaption>
+</figure>
+<h3 id="what-if-we-have-multiple-styles-that-conflits">What if we have multiple styles that conflits?</h3>
+<p>Indeed, dear reader, the matter of specificity is not to be trifled with, it&rsquo;s the hierarchy of style, the chain of command in our CSS kingdom! Allow me to elaborate, in proper order of precedence:</p>
+<ul>
+<li>
+<p>Inline styling – This is the sovereign decree, the royal command written directly on the element itself. It overrides most other styles with the authority of a monarch.</p>
+</li>
+<li>
+<p>ID selectors (#example) – Each ID is unique, like a titled noble, and their styles hold more sway than the common folk.</p>
+</li>
+<li>
+<p>Class selectors (.example) – These are your well-bred gentry, still powerful, but not quite as exclusive as an ID.</p>
+</li>
+</ul>
+<p>And then… there is the forbidden magic known as !important.
+Use it sparingly, for it overrides all else with reckless abandon, like a duke flipping the board mid-chess game. A useful tool in times of desperation, but not one to wield lightly, lest your stylesheet descend into chaos.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">black</span><span style="color:#75715e">!important</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Indeed, the addition of !important is akin to waving a royal scepter and proclaiming, &ldquo;This shall be the law of the land, no matter who protests!&rdquo; It trumps all, even the formidable inline styles, with an authority most absolute.</p>
+<p>And yes, the cascade in Cascading Style Sheets is not merely decorative wording! Should multiple rules apply to the same element with equal specificity, the one that appears last in the stylesheet shall be granted dominion.</p>
+<p>This seemingly minor principle becomes exceedingly crucial as your codebase grows from a tidy village to a bustling metropolis of styles. If not heeded, chaos may ensue, conflicting rules, wild overrides, and a sea of !importants thrown about like desperate pleas at a garden party gone awry.</p>
+<p>So, take heed and cultivate order from the very beginning, your future self shall toast to your foresight with the finest Earl Grey.</p>
+<h3 id="case">Case</h3>
+<p>I dabbled a bit in CodePen to reinforce what I&rsquo;ve learned and to help you all out in case anything&rsquo;s still a bit foggy. Feel free to take a gander, and do drop a comment if you&rsquo;ve got questions or spot anything peculiar in my code. After all, we&rsquo;re in this delightful mess of learning together!</p>
+
+
+
+
+
+
+<script
+    data-slug-hash="QwWPoyZ"
+    data-user="thebaguettebyte"
+    data-height="500"
+    data-default-tab="html,result"
+    data-theme-id="dark"
+    class='codepen'
+    async
+    src="//codepen.io/assets/embed/ei.js"
+></script>
+<p>If you click the HTML button, you’ll only see the final result, and trust me, the profile card looks far more elegant that way.</p>
+<p>We must practice! Never forget to close those tags and enclose values in quotes. As you explore, experiment with tags you discover through your Googling and observe the results. Should an error arise, fret not, simply consult the oracle (Google, that is). It is in the pursuit of solving such issues that we truly refine our craft as programmers.</p>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://thebaguettebyte.github.io/posts/first-project-recipes/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>First Project: Recipes</span></a
+    ></nav>
+  <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="fcb74724-f2ac-4c63-be52-be6a541f64fa"
+    data-page-id="fc9fc5538f50ac801a6027011598e500"
+    data-page-url="https://thebaguettebyte.github.io/posts/html-and-css-3/"
+    data-page-title="HTML and CSS: Part 3"
+  ></div>
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(() => {
+        const iframe = document.querySelector('#cusdis_thread iframe');
+        if (iframe) {
+          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+      }, 3000); 
+    });
+  </script>
+  
+
+
+  </article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025<a class="link" href="https://thebaguettebyte.github.io/">baguettebyte&#39;s coding!</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

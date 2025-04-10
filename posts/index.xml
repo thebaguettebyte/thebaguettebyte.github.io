@@ -6,14 +6,21 @@
     <description>Recent content in Posts on baguettebyte&#39;s coding!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Apr 2025 21:41:10 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2025 14:43:06 +0200</lastBuildDate>
     <atom:link href="https://thebaguettebyte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML and CSS: Part 3</title>
+      <link>https://thebaguettebyte.github.io/posts/html-and-css-3/</link>
+      <pubDate>Tue, 08 Apr 2025 14:43:06 +0200</pubDate>
+      <guid>https://thebaguettebyte.github.io/posts/html-and-css-3/</guid>
+      <description>&lt;p&gt;After the splendid escapade of our inaugural project, we return to the noble halls of HTML and CSS, with a greater emphasis on the ever-dashing CSS this time. I shall be employing CodePen once more, so that both the code and its gallant results may be admired side by side. Now then, let us begin with a touch of general knowledge to set the stage.&lt;/p&gt;&#xA;&lt;h3 id=&#34;css-what-does-it-stand-for&#34;&gt;CSS, what does it stand for?&lt;/h3&gt;&#xA;&lt;p&gt;It stands for Cascading Style Sheets.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>First Project: Recipes</title>
       <link>https://thebaguettebyte.github.io/posts/first-project-recipes/</link>
       <pubDate>Mon, 07 Apr 2025 21:41:10 +0200</pubDate>
       <guid>https://thebaguettebyte.github.io/posts/first-project-recipes/</guid>
-      <description>&lt;p&gt;Time for our first project! A celebratory wohoo is in order, progress, dear reader!&lt;/p&gt;&#xA;&lt;p&gt;We shall now embark upon our maiden voyage into the world of web development with a project graciously provided by The Odin Project, aptly titled Recipes. My humble rendition of this culinary-coded conquest can be found in the following repository on GitHub:&lt;/p&gt;&#xA;&lt;p&gt;👉 &lt;a href=&#34;https://github.com/thebaguettebyte/first-project-recipes&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;first-project-recipes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let the feast of learning commence! 🍽️&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-we-are-making&#34;&gt;What we are making&lt;/h3&gt;&#xA;&lt;p&gt;We shall be constructing a modest site consisting of a landing page and a single sub-page. Nothing overly ornate, mind you, but it shall proudly display the knowledge we&amp;rsquo;ve acquired thus far. From here on out, the only direction is upward.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Time for our first project! A celebratory wohoo is in order, progress, dear reader!&lt;/p&gt;&#xA;&lt;p&gt;We willl now embark upon our maiden voyage into the world of web development with a project graciously provided by The Odin Project, aptly titled Recipes. My humble rendition of this culinary-coded conquest can be found in the following repository on GitHub:&lt;/p&gt;&#xA;&lt;p&gt;👉 &lt;a href=&#34;https://github.com/thebaguettebyte/first-project-recipes&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;first-project-recipes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let the feast of learning commence! 🍽️&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-we-are-making&#34;&gt;What we are making&lt;/h3&gt;&#xA;&lt;p&gt;We shall be constructing a modest site consisting of a landing page and a single sub-page. Nothing overly ornate, mind you, but it shall proudly display the knowledge we&amp;rsquo;ve acquired thus far. From here on out, the only direction is upward.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML and CSS: Part 2</title>
@@ -27,7 +34,7 @@
       <link>https://thebaguettebyte.github.io/posts/html-and-css-1/</link>
       <pubDate>Fri, 04 Apr 2025 20:23:51 +0200</pubDate>
       <guid>https://thebaguettebyte.github.io/posts/html-and-css-1/</guid>
-      <description>&lt;p&gt;We shall dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What can they do for us? Why have they arrived? and have they come in peace, or do they come bearing some hidden agenda? So fasten your cravat and steady your monocle, for the journey ahead may prove delightfully turbulent!&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;    &lt;img src=&#34;htmlcssImg.png&#34; alt=&#34;Scientists afraid of HTML and CSS monsters coming to earth&#34;&gt;&#xD;&#xA;    &lt;figcaption&gt;From: Adobe Stock&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xA;&lt;h3 id=&#34;what-pray-tell-is-this-elusive-html&#34;&gt;What, Pray Tell, Is This Elusive HTML?&lt;/h3&gt;&#xA;&lt;p&gt;Imagine your own body, your skeleton is  the HTML, the very foundation that holds everything together. It stands for Hypertext Markup Language, so let&amp;rsquo;s get hyper indeed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Prepare to dissect and unravel the mysteries of these fine entities, HTML and CSS. What are they? What marvels might they offer? Why have they appeared, and do they come in peace, or bearing some secret agenda? So fasten your cravat and steady your monocle, for the journey ahead promises to be delightfully turbulent!&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;    &lt;img src=&#34;htmlcssImg.png&#34; alt=&#34;Scientists afraid of HTML and CSS monsters coming to earth&#34;&gt;&#xD;&#xA;    &lt;figcaption&gt;From: Adobe Stock&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xA;&lt;h3 id=&#34;what-pray-tell-is-this-elusive-html&#34;&gt;What, Pray Tell, Is This Elusive HTML?&lt;/h3&gt;&#xA;&lt;p&gt;Imagine your own body, your skeleton is  the HTML, the very foundation that holds everything together. It stands for Hypertext Markup Language, so let&amp;rsquo;s get hyper indeed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Visual Studio Code And Command Line Basics</title>
